@@ -2,8 +2,8 @@
 #include<cmath>
 #include<math.h>
 
-#include<RobustDubins_Solver.h>
-#include<MathTools.h>
+#include"../include/robust_dubins/RobustDubins_Solver.h"
+#include"../include/robust_dubins/MathTools.h"
 
 // constructor
 RobustDubins::Solver::Solver(){

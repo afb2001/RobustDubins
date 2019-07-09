@@ -1,7 +1,7 @@
 #include<limits> 
-#include<RobustDubins_Path.h>
-#include<RobustDubins_Solver.h>
-#include<MathTools.h>
+#include"../include/robust_dubins/RobustDubins_Path.h"
+#include"../include/robust_dubins/RobustDubins_Solver.h"
+#include"../include/robust_dubins/MathTools.h"
 
 // constructor
 RobustDubins::Path::Path(){
@@ -187,7 +187,7 @@ void RobustDubins::Path::computePathHistory(){
     else if ( m_userInputSpacing ){ 
       m_num_pts = std::floor(arc_length_tot/m_nom_spacing); 
     }
-    vd arcPts = MathTools::linspace(0, arc_length_tot, m_num_pts);
+    vd arcPts = MathTools::linspace(0, arc_length_tot, arc_length_tot/m_num_pts);
     vd currentPoint(3);
     for (int i = 0; i < m_num_pts; i++ ){
 			  RobustDubins::computeDubinsPoint( m_pathType, 

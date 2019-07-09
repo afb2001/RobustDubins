@@ -1,10 +1,10 @@
-#include<RobustDubins_Utils.h>
+#include"../include/robust_dubins/RobustDubins_Utils.h"
 
 // custom
-#include<RobustDubins_Problem.h>
-#include<RobustDubins_Solver.h>
-#include<RobustDubins_Path.h>
-#include<MathTools.h>
+#include"../include/robust_dubins/RobustDubins_Problem.h"
+#include"../include/robust_dubins/RobustDubins_Solver.h"
+#include"../include/robust_dubins/RobustDubins_Path.h"
+#include"../include/robust_dubins/MathTools.h"
 
 
 void RobustDubins::DubinsChain( double turnRadius, double nomSpacing, vd xPts, vd yPts, vd hRadPts, 
